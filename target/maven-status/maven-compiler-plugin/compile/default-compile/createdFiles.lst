@@ -1,3 +1,4 @@
-drivers\DriverManager.class
 utils\ConfigReader.class
+pages\RegisterPage.class
+drivers\DriverManager.class
 factory\DriverFactory.class

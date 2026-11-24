@@ -10,10 +10,18 @@ public class DriverManager {
         return driver;
     }
 
-    public static void setDriver(WebDriver webDriver){
-        driver = webDriver;
 
+    public static void setDriver(WebDriver webDriver) {
+
+        if (webDriver == null) {
+            throw new IllegalArgumentException(
+                    "WebDriver não pode ser null."
+            );
+        }
+
+        driver = webDriver;
     }
+
 
     public  static void quitDriver(){
         if(driver != null){
@@ -21,4 +29,6 @@ public class DriverManager {
             driver = null;
         }
     }
+
+
 }
