@@ -21,7 +21,7 @@ public class DriverFactory {
             options.addArguments("--window-size=1920,1080");
         }
 
-        WebDriver driver = new ChromeDriver(options);
+        WebDriver driver = new  ChromeDriver(options);
 
         if (!"true".equalsIgnoreCase(System.getenv("CI"))) {
             driver.manage().window().maximize();
